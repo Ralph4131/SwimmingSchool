@@ -1,0 +1,24 @@
+@model Session
+
+<h1>Session Details</h1>
+
+<table class="table">
+    <tr>
+        <th>Date:</th>
+        <td>@Model.Date.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Time:</th>
+        <td>@Model.Time</td>
+    </tr>
+    <tr>
+        <th>Lesson:</th>
+        <td>@Model.Lesson</td>
+    </tr>
+    <tr>
+        <th>Enrolled Swimmers:</th>
+        <td>@Model.EnrolledSwimmers</td>
+    </tr>
+</table>
+
+<a asp-action="MySessions">Back to My Sessions</a>
